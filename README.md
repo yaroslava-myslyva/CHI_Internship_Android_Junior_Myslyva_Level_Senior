@@ -9,7 +9,6 @@ After clicking the button in Fragment, increase the counter and show how many ti
 After rotating the screen, the counter value should be saved
  In Fragment, you should add a toolbar with a back arrow
  After clicking on the back arrow, you should go back to Activity and show in Activity TextView how many clicks were made in Fragment.
-
 ____________________________________________________________________
 
 Level 2
@@ -40,8 +39,6 @@ After clicking Sorting you should open Dialog with 4 TextView
 3 – Sort by student status (student first) 
 4 – Sort by description (Short description first) 
 After selecting the type of sort, you need to update UI and show Users in a chosen order
-
-
 ____________________________________________________________________
 
 Level 3
