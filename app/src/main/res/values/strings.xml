@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CHI_Internship_Android_Junior_Myslyva_Level_Senior</string>
+    <string name="button_activity">cl</string>
+    <string name="button_fragment">click</string>
 </resources>
