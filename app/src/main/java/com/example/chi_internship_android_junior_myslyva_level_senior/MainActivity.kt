@@ -3,6 +3,9 @@ package com.example.chi_internship_android_junior_myslyva_level_senior
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.chi_internship_android_junior_myslyva_level_senior.databinding.ActivityMainBinding
 
 
@@ -17,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setupBinding()
+        setupNavController()
     }
 
     private fun setupBinding() {
@@ -24,13 +28,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
 
-    override fun onResume() {
-        super.onResume()
-        binding.activityButton.visibility = View.VISIBLE
-        binding.activityButton.setOnClickListener {
-           supportFragmentManager.beginTransaction().replace(R.id.main_activity, FirstFragment()).commit()
-            it.visibility = View.INVISIBLE
-        }
-
+    private fun setupNavController() {
+        val navController = binding.navHostFragment.getFragment<NavHostFragment>().navController
+        val appBarConfiguration = AppBarConfiguration(setOf(R.id.destination_main_fragment))
+        setupActionBarWithNavController(navController, appBarConfiguration)
     }
 }

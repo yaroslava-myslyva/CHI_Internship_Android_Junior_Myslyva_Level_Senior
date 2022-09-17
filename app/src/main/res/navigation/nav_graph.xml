@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/destination_main_fragment">
+
+    <fragment
+        android:id="@+id/destination_main_fragment"
+        android:name="com.example.chi_internship_android_junior_myslyva_level_senior.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_counterFragment"
+            app:destination="@id/destination_counter_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_counter_fragment"
+        android:name="com.example.chi_internship_android_junior_myslyva_level_senior.CounterFragment"
+        android:label="CounterFragment" >
+        <action
+            android:id="@+id/action_destination_counter_fragment_to_destination_main_fragment"
+            app:destination="@id/destination_main_fragment" />
+    </fragment>
+
+</navigation>
