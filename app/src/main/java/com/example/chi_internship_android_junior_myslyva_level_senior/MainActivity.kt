@@ -1,7 +1,6 @@
 package com.example.chi_internship_android_junior_myslyva_level_senior
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration

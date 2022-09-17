@@ -1,6 +1,5 @@
 package com.example.chi_internship_android_junior_myslyva_level_senior
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 

@@ -4,31 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/first_fragment"
+    android:id="@+id/counter_fragment"
     android:background="@color/design_default_color_background"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/fragment_button"
+        android:id="@+id/counter_fragment_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="@string/button_fragment"
+        android:text="@string/button_counter_fragment"
         android:textSize="@dimen/button_text"
         android:paddingHorizontal="@dimen/button_padding_horizontal"
         android:paddingVertical="@dimen/button_padding_vertical"/>
 
     <TextView
-        android:id="@+id/fragment_textview"
+        android:id="@+id/counter_fragment_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/fragment_button"
-        android:text="fragment"
+        app:layout_constraintBottom_toTopOf="@+id/counter_fragment_button"
         android:textSize="@dimen/textview_size"
         android:layout_marginVertical="@dimen/textview_margin_vertical"/>
 

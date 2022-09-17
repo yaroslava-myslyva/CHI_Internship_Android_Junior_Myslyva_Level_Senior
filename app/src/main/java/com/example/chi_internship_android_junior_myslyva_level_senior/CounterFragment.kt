@@ -17,7 +17,7 @@ class CounterFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentCounterBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
@@ -26,10 +26,12 @@ class CounterFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setupToolbar()
         viewModel.counter.observe(viewLifecycleOwner) {
-            binding.fragmentTextview.text = it.toString()
+            binding.counterFragmentTextview.text = it.toString()
+
         }
-        binding.fragmentButton.setOnClickListener {
+        binding.counterFragmentButton.setOnClickListener {
             viewModel.increaseCounter()
+
         }
     }
 
@@ -40,6 +42,8 @@ class CounterFragment : Fragment() {
 
             override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
                 if (menuItem.itemId == android.R.id.home) {
+
+
                     findNavController().navigate(R.id.destination_main_fragment)
                 }
                 return false
