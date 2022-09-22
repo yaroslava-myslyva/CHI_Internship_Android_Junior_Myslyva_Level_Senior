@@ -27,11 +27,9 @@ class CounterFragment : Fragment() {
         setupToolbar()
         viewModel.counter.observe(viewLifecycleOwner) {
             binding.counterFragmentTextview.text = it.toString()
-
         }
         binding.counterFragmentButton.setOnClickListener {
             viewModel.increaseCounter()
-
         }
     }
 
@@ -42,8 +40,6 @@ class CounterFragment : Fragment() {
 
             override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
                 if (menuItem.itemId == android.R.id.home) {
-
-
                     findNavController().navigate(R.id.destination_main_fragment)
                 }
                 return false
