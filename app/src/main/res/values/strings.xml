@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CHI_Internship_Android_Junior_Myslyva_Level_Senior</string>
+    <string name="app_name">Level 1</string>
     <string name="button_fragment_main">Let\'s click</string>
     <string name="button_counter_fragment">click</string>
     <string name="fragment_main_top_text">Number of clicks</string>

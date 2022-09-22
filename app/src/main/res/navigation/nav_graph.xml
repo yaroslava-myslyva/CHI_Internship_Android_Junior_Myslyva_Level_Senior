@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/destination_main_fragment"
         android:name="com.example.chi_internship_android_junior_myslyva_level_senior.MainFragment"
-        android:label="MainFragment" >
+        android:label="@string/app_name" >
         <action
             android:id="@+id/action_mainFragment_to_counterFragment"
             app:destination="@id/destination_counter_fragment" />
@@ -16,7 +16,7 @@
     <fragment
         android:id="@+id/destination_counter_fragment"
         android:name="com.example.chi_internship_android_junior_myslyva_level_senior.CounterFragment"
-        android:label="CounterFragment" >
+        android:label="@string/app_name" >
         <action
             android:id="@+id/action_destination_counter_fragment_to_destination_main_fragment"
             app:destination="@id/destination_main_fragment" />
